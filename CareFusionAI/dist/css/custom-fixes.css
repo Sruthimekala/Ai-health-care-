@@ -1,0 +1,20 @@
+/* Fix for vendor prefix warnings */
+input[type="file"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* Fix for color-adjust property */
+@media print {
+  .form-select {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
